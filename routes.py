@@ -6,6 +6,9 @@ from weather import get_weather_by_zip
 def index():
     return "Welcome to my portfolio backend app!"
 
+@app.route('/wakeup')
+def wakeup():
+    return 'Backend active', 200
 
 @app.route('/weather', methods=['GET'])
 def fetch_weather():

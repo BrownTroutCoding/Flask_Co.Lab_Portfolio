@@ -14,3 +14,4 @@ def get_weather_by_zip(zip_code, country_code='US'):
         return weather_data
     else:
         response.raise_for_status()
+
